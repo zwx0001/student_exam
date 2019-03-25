@@ -1,0 +1,10 @@
+import dva from "dva";
+import "../static/common.scss";
+import "../static/normalize.scss";
+import { models } from "./models";
+import createLoading from "dva-loading";
+const app = dva();
+app.router(require("./router").default);
+app.use(createLoading());
+models(app);
+app.start("#app");

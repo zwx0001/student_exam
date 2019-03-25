@@ -1,0 +1,130 @@
+.test {
+  box-sizing: border-box;
+  background: #eee;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #ccc;
+    background: #fff;
+    padding: 0 20px;
+  }
+  .tit {
+    border-bottom: none;
+    background: #fff;
+    padding: 0 20px;
+    > p:nth-child(1) {
+      font-size: 22px;
+    }
+  }
+  .content {
+    padding: 0 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .width_1 {
+      width: 50%;
+    }
+    .width_2 {
+      width: 30%;
+    }
+    .width_3 {
+      width: 70%;
+    }
+    .con_left {
+      background: #fff;
+      flex-shrink: 0;
+      border-radius: 5px;
+      overflow-x: auto;
+      img {
+        width: 100%;
+      }
+      > p {
+        line-height: 30px;
+        padding: 0 10px;
+      }
+      .question_title {
+        border-bottom: solid 1px #ccc;
+        line-height: 50px;
+        span {
+          margin: 0 10px;
+          display: inline-block;
+          line-height: 48px;
+        }
+        span.active {
+          color: #3f9eff;
+          border-bottom: solid 1px #3f9eff;
+        }
+      }
+    }
+    .con_right {
+      flex: 1;
+
+      background: #fff;
+      margin-left: 10px;
+      padding: 0 10px;
+      .ReactCodeMirror {
+        width: 100%;
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #ccc;
+    position: relative;
+    > button {
+      height: 30px;
+      background: #3f9eff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0 10px;
+    }
+    .btn_list {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        height: 30px;
+        background: #fff;
+
+        border: solid 1px #ccc;
+        border-radius: 4px;
+        padding: 0 10px;
+      }
+    }
+    .titlelist {
+      position: absolute;
+      bottom: 50px;
+      left: 10px;
+      background: #F5F5F4;
+      border-top-right-radius: 5px;
+       border-top-left-radius: 5px;
+       width:30%;
+       z-index: 99;
+     p{
+       padding:10px;
+       
+     }
+     p.active{
+       background: #eee;
+     }
+    }
+  }
+  .scale {
+    line-height: 40px;
+    padding: 0 20px;
+    button {
+      margin: 0 10px;
+    }
+  }
+}
